@@ -11,7 +11,7 @@ from fastapi.routing import APIRouter
 from fastapi import BackgroundTasks
 import time
 import asyncio
-import schedule
+
 
 app = FastAPI()
 async def exception_handler(request: Request, exc: Exception):
