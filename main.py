@@ -62,8 +62,10 @@ def peliculas_idioma(idioma="English"):
 @app.get("/peliculas_duracion/{pelicula}")
 def peliculas_duracion(pelicula="Toy Story"):
     df_pelicula = df[df['title'] == pelicula]
-    duracion = df_pelicula['runtime'].value_counts()
-    anio = df_pelicula['release_year'].value_counts()
+    df_pelicula['runtime'].astype(str)
+    df_pelicula['release_year'].astype(str)
+    duracion = df_pelicula['runtime'].values[0]
+    anio = df_pelicula['release_year'].values[0]
     return {'pelicula': pelicula, 'duracion': duracion, 'año': anio}
 
 #def productoras_exitosas( Productora: str ): Se ingresa la productora, entregandote el revunue total y la cantidad de peliculas que realizo.
