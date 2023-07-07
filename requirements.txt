@@ -3,4 +3,4 @@ pandas
 uvicorn
 scikit-learn
 requests
-numpy==1.13.0
+
