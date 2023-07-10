@@ -45,6 +45,8 @@ Python 3.7 o superior.
 Bibliotecas Python: FastAPI, pandas, scikit-learn, etc.
 
 Acceso a Internet para consumir la API.
+
+Datasets: https://drive.google.com/drive/folders/1nvSjC2JWUH48o3pb8xlKofi8SNHuNWeu
 ## Contribuciones
 Actualmente, no se aceptan contribuciones externas para este proyecto. Sin embargo, si tienes alguna sugerencia o mejora, no dudes en contactar al autor del proyecto.
 
