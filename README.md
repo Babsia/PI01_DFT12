@@ -7,10 +7,10 @@ Este proyecto consiste en desarrollar un sistema de recomendación de películas
 ## Requerimientos de Aprobación
 El proyecto cumple con los siguientes requerimientos:
 
-## Transformaciones de Datos
+### Transformaciones de Datos
 Se realizaron las transformaciones necesarias en los datos, incluyendo desanidación de campos anidados, rellenado de valores nulos en los campos de revenue y budget, eliminación de valores nulos en el campo de release date, y creación de la columna de retorno de inversión.
 Se eliminaron las columnas no utilizadas, como video, imdb_id, adult, original_title, poster_path y homepage.
-## Desarrollo de la API
+### Desarrollo de la API
 Se implementaron los siguientes endpoints en la API utilizando el framework FastAPI:
 
 peliculas_idioma(Idioma: str): Recibe un idioma como parámetro y devuelve la cantidad de películas producidas en ese idioma.
@@ -19,10 +19,10 @@ franquicia(Franquicia: str): Recibe el nombre de una franquicia como parámetro 
 peliculas_pais(Pais: str): Recibe el nombre de un país como parámetro y devuelve la cantidad de películas producidas en ese país.
 productoras_exitosas(Productora: str): Recibe el nombre de una productora como parámetro y devuelve el total de ingresos y la cantidad de películas realizadas por la productora.
 get_director(nombre_director): Recibe el nombre de un director y devuelve el éxito del director medido a través del retorno. También devuelve una lista de películas dirigidas por ese director, incluyendo la fecha de lanzamiento, retorno individual, costo y ganancia de cada película.
-## Deployment
+### Deployment
 El sistema de recomendación de películas ha sido desplegado en la plataforma de Render para que pueda ser consumido desde la web. La API está disponible a través de la siguiente URL: https://pibabsia12.onrender.com/docs
 
-## Sistema de Recomendación
+### Sistema de Recomendación
 Se entrenó un modelo de machine learning para construir un sistema de recomendación de películas. El modelo utiliza la similitud de puntuación entre películas para recomendar películas similares a los usuarios. Se implementó una función adicional en la API llamada recomendacion(titulo) que recibe el nombre de una película y devuelve una lista de las 5 películas más similares en orden descendente.
 
 ## Instrucciones de Uso
