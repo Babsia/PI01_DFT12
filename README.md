@@ -37,7 +37,6 @@ Accede a la URL de la API: https://pibabsia12.onrender.com/docs
 Utiliza los diferentes endpoints de la API para obtener información y realizar consultas relacionadas con las películas.
 
 Para utilizar la función de recomendación, llama al endpoint recomendacion(titulo) y proporciona el nombre de una película como parámetro. La API devolverá una 
-
 lista con las 5 películas más similares a la proporcionada.
 
 ## Requisitos
