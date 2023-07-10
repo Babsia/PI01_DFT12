@@ -14,11 +14,17 @@ Se eliminaron las columnas no utilizadas, como video, imdb_id, adult, original_t
 Se implementaron los siguientes endpoints en la API utilizando el framework FastAPI:
 
 peliculas_idioma(Idioma: str): Recibe un idioma como parámetro y devuelve la cantidad de películas producidas en ese idioma.
+
 peliculas_duracion(Pelicula: str): Recibe el nombre de una película como parámetro y devuelve la duración y el año de estreno de la película.
+
 franquicia(Franquicia: str): Recibe el nombre de una franquicia como parámetro y devuelve la cantidad de películas, la ganancia total y la ganancia promedio de la franquicia.
+
 peliculas_pais(Pais: str): Recibe el nombre de un país como parámetro y devuelve la cantidad de películas producidas en ese país.
+
 productoras_exitosas(Productora: str): Recibe el nombre de una productora como parámetro y devuelve el total de ingresos y la cantidad de películas realizadas por la productora.
+
 get_director(nombre_director): Recibe el nombre de un director y devuelve el éxito del director medido a través del retorno. También devuelve una lista de películas dirigidas por ese director, incluyendo la fecha de lanzamiento, retorno individual, costo y ganancia de cada película.
+
 ### Deployment
 El sistema de recomendación de películas ha sido desplegado en la plataforma de Render para que pueda ser consumido desde la web. La API está disponible a través de la siguiente URL: https://pibabsia12.onrender.com/docs
 
@@ -27,17 +33,25 @@ Se entrenó un modelo de machine learning para construir un sistema de recomenda
 
 ## Instrucciones de Uso
 Accede a la URL de la API: https://pibabsia12.onrender.com/docs
+
 Utiliza los diferentes endpoints de la API para obtener información y realizar consultas relacionadas con las películas.
-Para utilizar la función de recomendación, llama al endpoint recomendacion(titulo) y proporciona el nombre de una película como parámetro. La API devolverá una lista con las 5 películas más similares a la proporcionada.
-Requisitos
+
+Para utilizar la función de recomendación, llama al endpoint recomendacion(titulo) y proporciona el nombre de una película como parámetro. La API devolverá una 
+
+lista con las 5 películas más similares a la proporcionada.
+
+## Requisitos
 Python 3.7 o superior.
+
 Bibliotecas Python: FastAPI, pandas, scikit-learn, etc.
+
 Acceso a Internet para consumir la API.
 ## Contribuciones
 Actualmente, no se aceptan contribuciones externas para este proyecto. Sin embargo, si tienes alguna sugerencia o mejora, no dudes en contactar al autor del proyecto.
 
 ## Autor
 Nombre: Babsia Santiago
+
 Contacto: santiagobabsia@gmail.com
 
 ## Agradecimientos
